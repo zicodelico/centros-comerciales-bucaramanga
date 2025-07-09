@@ -1,13 +1,106 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Centro Comercial Parque Caracolí</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9fbfd;
+            padding: 40px;
+            max-width: 800px;
+            margin: auto;
+            color: #2c3e50;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .boton {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            text-decoration: none;
+            width: fit-content;
+            transition: background-color 0.3s ease;
+        }
+        .boton:hover {
+            background-color: #2980b9;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .imagen-centro {
+            width: 600px;
+            height: auto;
+            display: block;
+            margin: 30px auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        a.volver {
+            display: block;
+            text-align: center;
+            margin-top: 40px;
+            font-weight: bold;
+            color: #3498db;
+            text-decoration: none;
+        }
+        a.volver:hover {
+            text-decoration: underline;
+        }
+        /* Estilos para las etiquetas */
+        .etiquetas {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .etiquetas span {
+            background-color: #e74c3c;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
     <h1>Centro Comercial Parque Caracolí</h1>
-    <p>Dirección: Autopista Bucaramanga – Floridablanca</p>
-    <p><a href="https://www.parquecaracoli.com/" target="_blank">Visitar sitio oficial</a></p>
-    <a href="index.html">Volver al inicio</a>
+    <p><strong>Dirección:</strong> Autopista Bucaramanga – Floridablanca</p>
+
+    <a href="https://www.parquecaracoli.com/" target="_blank" class="boton">Visitar sitio oficial de Parque Caracolí</a>
+
+    <img src="imagenes/parque-caracoli.jpg" alt="Centro Comercial Parque Caracolí" class="imagen-centro">
+
+    <h2>Características:</h2>
+    <ul>
+        <li>Tiendas de lujo y marcas internacionales</li>
+        <li>Restaurantes gourmet y zona de cafés</li>
+        <li>Cine premium</li>
+        <li>Zona de entretenimiento infantil</li>
+        <li>Eventos culturales y de moda</li>
+    </ul>
+
+    <!-- Etiquetas ajustadas -->
+    <h2>Etiquetas:</h2>
+    <div class="etiquetas">
+        <a href="https://www.luxurybrands.com.pe/" target="_blank"><span>Luxury Brands</span></a>
+        <a href="https://happycity.com.co/parques/happy-city-parque-caracoli/" target="_blank"><span>Happy City</span></a>
+        <a href="https://www.cinemark.com.co/ciudad/undefined/parque-caracoli" target="_blank"><span>Cinemark</span></a>
+    </div>
+
+    <a href="index.html" class="volver">← Volver al inicio</a>
 </body>
 </html>
+
+
+

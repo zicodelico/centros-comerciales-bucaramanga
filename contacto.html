@@ -3,10 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <title>Contacto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9fbfd;
+            padding: 40px;
+            max-width: 800px;
+            margin: auto;
+            color: #2c3e50;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .imagen-centro {
+            width: 600px;
+            height: auto;
+            display: block;
+            margin: 30px auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        a.volver {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            font-weight: bold;
+            color: #3498db;
+            text-decoration: none;
+        }
+        a.volver:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <h1>Contacto</h1>
-    <p>Para más información, contáctanos al correo: info@centroscomerciales.com</p>
-    <a href="index.html">Volver al inicio</a>
+    <p>Envíanos tus comentarios o dudas:</p>
+    
+    <form>
+        <input type="text" placeholder="Tu Nombre" required>
+        <input type="email" placeholder="Tu Correo" required>
+        <textarea placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Imagen de correo -->
+    <img src="imagenes/correo.jpg" alt="Correo de contacto" class="imagen-centro">
+
+    <a href="index.html" class="volver">← Volver al inicio</a>
 </body>
 </html>

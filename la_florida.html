@@ -3,11 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <title>Centro Comercial La Florida</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9fbfd;
+            padding: 40px;
+            max-width: 800px;
+            margin: auto;
+            color: #2c3e50;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .boton {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            text-decoration: none;
+            width: fit-content;
+            transition: background-color 0.3s ease;
+        }
+        .boton:hover {
+            background-color: #2980b9;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .imagen-centro {
+            width: 600px;
+            height: auto;
+            display: block;
+            margin: 30px auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        a.volver {
+            display: block;
+            text-align: center;
+            margin-top: 40px;
+            font-weight: bold;
+            color: #3498db;
+            text-decoration: none;
+        }
+        a.volver:hover {
+            text-decoration: underline;
+        }
+        /* Estilos para las etiquetas */
+        .etiquetas {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .etiquetas span {
+            background-color: #e74c3c;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
     <h1>Centro Comercial La Florida</h1>
-    <p>Dirección: Calle 45 #29-30</p>
-    <p><a href="https://www.laflorida.com.co/" target="_blank">Visitar Facebook oficial</a></p>
-    <a href="index.html">Volver al inicio</a>
+    <p><strong>Dirección:</strong> Calle 45 #29-30</p>
+
+    <a href="https://www.laflorida.com.co/" target="_blank" class="boton">Visitar sitio oficial de La Florida</a>
+
+    <img src="imagenes/laflorida.jpeg" alt="Centro Comercial La Florida" class="imagen-centro">
+
+    <h2>Características:</h2>
+    <ul>
+        <li>Supermercado Olímpica</li>
+        <li>Tiendas de moda y hogar</li>
+        <li>Zona financiera con varios bancos</li>
+        <li>Zona de comidas</li>
+        <li>Amplio parqueadero</li>
+    </ul>
+
+    <!-- Etiquetas añadidas -->
+    <h2>Etiquetas:</h2>
+    <div class="etiquetas">
+        <a href="https://www.jumbocolombia.com/" target="_blank"><span>Jumbo</span></a>
+        <a href="https://www.alkomprar.com/" target="_blank"><span>Alkomprar</span></a>
+        <a href="https://www.bancodebogota.com/personas" target="_blank"><span>Banco de Bogota</span></a>
+    </div>
+
+    <a href="index.html" class="volver">← Volver al inicio</a>
 </body>
 </html>
+
+
+
+

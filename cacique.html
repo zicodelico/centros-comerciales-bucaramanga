@@ -3,11 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <title>Cacique Centro Comercial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9fbfd;
+            padding: 40px;
+            max-width: 800px;
+            margin: auto;
+            color: #2c3e50;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .boton {
+            background-color: #3498db;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            text-decoration: none;
+            width: fit-content;
+            transition: background-color 0.3s ease;
+        }
+        .boton:hover {
+            background-color: #2980b9;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .imagen-centro {
+            width: 300px;
+            height: auto;
+            display: block;
+            margin: 30px auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .etiquetas {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .etiquetas span {
+            background-color: #e74c3c;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        a.volver {
+            display: block;
+            text-align: center;
+            margin-top: 40px;
+            font-weight: bold;
+            color: #3498db;
+            text-decoration: none;
+        }
+        a.volver:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <h1>Cacique Centro Comercial</h1>
-    <p>Dirección: Transversal Oriental Metropolitana #110-68</p>
-    <p><a href="https://www.caciquecc.com/" target="_blank">Visitar sitio oficial</a></p>
-    <a href="index.html">Volver al inicio</a>
+    <p><strong>Dirección:</strong> Transversal Oriental Metropolitana #110-68</p>
+
+    <a href="https://www.caciquecc.com/" target="_blank" class="boton">Visitar sitio oficial de Cacique</a>
+
+    <img src="imagenes/cacique.png" alt="Cacique Centro Comercial" class="imagen-centro">
+
+    <h2>Características:</h2>
+    <ul>
+        <li>Gran variedad de tiendas de ropa y tecnología</li>
+        <li>Zona de restaurantes amplia</li>
+        <li>Cine de última generación (Cine Colombia)</li>
+    </ul>
+
+    <h2>Etiquetas:</h2>
+    <div class="etiquetas">
+        <a href="https://www.falabella.com.co/falabella-co" target="_blank"><span>Falabella</span></a>
+        <a href="https://www.cinecolombia.com/bucaramanga/multiplex/cacique" target="_blank"><span>Cine Colombia</span></a>
+        <a href="https://crepesywaffles.com/ubicaciones/centro-comercial-cacique" target="_blank"><span>Crepes y Waffles</span></a>
+    </div>
+
+    <a href="index.html" class="volver">← Volver al inicio</a>
 </body>
 </html>
+
+
